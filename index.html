@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div>
+            <label for="numberInput">Length</label>
+            <input type="number" id="numberInput" min="0" max="128">
+            <br>
+        </div>
+        <div>
+            <input type="range" class="range" id="length" value="8" min="0" max="128">
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="numbers"checked>
+            <label for="numbers">Numbers</label><span class="checkboxLetters">&nbsp;(0-9)</span>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Small Letters</label><span class="checkboxLetters">&nbsp;(a-z)</span>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="uppercase" checked>
+            <label for="uppercase">Capital Letters</label><span class="checkboxLetters">&nbsp;(A-Z)</span>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Symbols</label><span class="checkboxLetters">&nbsp;(!@#$...)</span>
+        </div>
+        <div class="generate-button">
+            <button id="generate">Generate Password</button>
+        </div>
+        <section>
+            <p class="password passwordText" id="password"><span>Click on generate password</span></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
